@@ -10,10 +10,12 @@
         name: nginx
         state: present
         update_cache: yes
+      delegate_to: localhost
 
     - name: Start and enable Nginx
       service:
         name: nginx
         state: started
         enabled: yes
+      delegate_to: localhost
 
