@@ -2,7 +2,7 @@
 - name: Install and Start Nginx on Localhost
   hosts: localhost
   become: yes  # Run as sudo
-  become_method: sudo
+  become_method: su
   become_user: root
   gather_facts: false
 
