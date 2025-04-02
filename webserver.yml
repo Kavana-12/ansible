@@ -5,6 +5,9 @@
   gather_facts: false
 
   tasks:
+    - name: debug
+      msg: "hello:"
+
     - name: Install Nginx
       apt:
         name: nginx
