@@ -4,6 +4,7 @@
   become: yes  # Run as sudo
   become_method: sudo
   become_user: root
+  sudo_executable: /usr/bin/sudo
   gather_facts: false
 
   tasks:
