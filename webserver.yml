@@ -6,7 +6,8 @@
 
   tasks:
     - name: debug
-      msg: "hello:"
+      debug:
+        msg: "hello:"
 
     - name: Install Nginx
       apt:
