@@ -1,7 +1,7 @@
 ---
 - name: Install and Start Nginx on Localhost
   hosts: localhost
-  become: no  # Run as sudo
+  become: yes  # Run as sudo
 
   tasks:
     - name: Install Nginx
