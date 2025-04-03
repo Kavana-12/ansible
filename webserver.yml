@@ -4,7 +4,7 @@
   become: yes  # Run as sudo
   become_method: sudo
   become_user: root
-  # become_password: Kavana@13
+  become_password: Kavana@13
   gather_facts: false
 
   tasks:
