@@ -20,8 +20,6 @@
       ansible.builtin.apt:
           name: nginx
           state: latest
-
-        
       #delegate_to: localhost
       
     - name: Start and enable Nginx
