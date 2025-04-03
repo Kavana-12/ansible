@@ -18,13 +18,12 @@
         state: present
         update_cache: yes
       delegate_to: localhost
-      become_password: Kavana@13
-
+      
     - name: Start and enable Nginx
       service:
         name: nginx
         state: started
         enabled: yes
       delegate_to: localhost
-      become_password: Kavana@13
+      
 
