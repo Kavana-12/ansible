@@ -13,7 +13,7 @@
         msg: "hello:"
 
     - name: Ensure sudo is installed
-      ansible.builtin.apt:
+      apk:
         name: sudo
         state: present
       become: no
