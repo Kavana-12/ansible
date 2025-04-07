@@ -31,7 +31,7 @@
       
 
 - name: Install and Start Nginx on Localhost
-  hosts: localhost
+  hosts: all
   gather_facts: false
   tasks:
     - name: debug
@@ -39,7 +39,7 @@
         msg: "hello:"
 
     - name: Install Nginx
-      ansible.builtin.apt:
+      apt:
         name: nginx
         state: latest
 
