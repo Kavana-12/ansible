@@ -16,13 +16,11 @@
       apk:
         name: sudo
         state: present
-      become: no
 
     - name: Install Nginx
       apk:
         name: nginx
         state: latest
-      become: no
           
       #delegate_to: localhost
       
