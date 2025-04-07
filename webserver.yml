@@ -13,14 +13,16 @@
         msg: "hello:"
 
     - name: Ensure sudo is installed
-      ansible.builtin.package:
+      ansible.builtin.apt:
         name: sudo
         state: present
+      become: no
 
     - name: Install Nginx
       ansible.builtin.apt:
-          name: nginx
-          state: latest
+        name: nginx
+        state: latest
+      become: no
           
       #delegate_to: localhost
       
