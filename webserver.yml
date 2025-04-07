@@ -19,7 +19,7 @@
       become: no
 
     - name: Install Nginx
-      ansible.builtin.apt:
+      apk:
         name: nginx
         state: latest
       become: no
