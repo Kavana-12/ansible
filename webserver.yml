@@ -12,6 +12,11 @@
       debug:
         msg: "hello:"
 
+    - name: Ensure sudo is installed
+      ansible.builtin.package:
+        name: sudo
+        state: present
+
     - name: Install Nginx
       ansible.builtin.apt:
           name: nginx
